@@ -1,0 +1,483 @@
+body{
+
+    background-image:url(ChatGPT\ Image\ Mar\ 27\,\ 2026\,\ 03_20_40\ PM.png);
+    height:100vh;
+    background-size:cover ;
+    background-position: center;
+    
+}
+
+/* Navbar background */
+header {
+    background-color: transparent !important;
+    border-bottom: none !important;
+}
+
+/* All navbar text (default white) */
+.navbar,
+.navbar * {
+    color: white !important;
+}
+
+/* Nav links */
+.nav-link {
+    color: white !important;
+    text-decoration: none !important; /* removes underline */
+}
+
+/* Remove underline completely (hover/focus/active) */
+.nav-link:hover,
+.nav-link:focus,
+.nav-link:active {
+    color: #ddd !important;
+    text-decoration: none !important;
+}
+
+/* Remove Bootstrap active/secondary styles */
+.nav-link.link-secondary {
+    color: white !important;
+}
+
+/* Remove any underline from links globally */
+a {
+    text-decoration: none !important;
+}
+
+/* Logo SVG */
+.bi {
+    fill: white;
+}
+
+/* Login button */
+.btn-outline-primary {
+    border: none !important;
+    background: transparent !important;
+    color: white !important;
+}
+
+.btn-outline-primary:hover {
+    color: #ccc !important;
+}
+
+/* Sign-up button */
+.btn-primary {
+    background-color: white !important;
+    color: black !important;
+    border: none !important;
+}
+
+.btn-primary:hover {
+    background-color: #ddd !important;
+}
+
+/* Remove focus outline */
+button:focus,
+.btn:focus {
+    box-shadow: none !important;
+    outline: none !important;
+}
+
+/* Project title (BLACK as you requested) */
+.project-title {
+    color: black !important;
+    font-size: 18px;
+    font-weight: 600;
+    margin-left: 15px;
+}
+
+/* Optional: ensure headings stay white except project title */
+h1, h2, h3, h4, h5, h6,
+p, span {
+    color: white;
+}
+
+.main{
+    display:grid;
+    grid-template-rows:1fr 1fr 1fr 1fr 1fr 1fr;
+    grid-template-columns:0.2fr 1fr 1fr 1fr 0.2fr;
+    height:100vh;
+    gap:5px;
+}
+
+.block1{
+
+    grid-area:2/2/4/3;
+    color:aqua;
+    display:grid;
+    grid-template-columns:0.2fr 1fr 1fr 1fr 1fr 1fr  1fr 1fr 1fr 0.2fr;
+    grid-template-rows:0.2fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 0.2fr  ;
+    background-color:rgba(1, 0, 0, 0);
+    backdrop-filter: blur(10px);
+     box-shadow: 0 0 10px rgb(0, 255, 119), inset 0 0 10px rgba(0, 210, 255, 0.2);
+    border-radius: 30px;
+    
+
+    
+}
+
+.img1{
+    width:100px;
+    grid-area:4/3/7/5;
+    border-radius: 10px;
+
+}
+.text1{
+    font-weight:900;
+    grid-area: 3 / 5 / 5 / 9;
+    margin-top:10px;
+    font-size:25px;
+}
+
+.par1{
+    font-size: 14px;
+    grid-area:5/5/8/8;
+    
+
+
+}
+
+.but1{
+    border-radius:10px;
+    font-size:14px;
+    grid-area:8/5/12/8;
+    height:40px;
+    
+}
+
+.block2{
+
+    grid-area:2/4/4/5;
+    color:aqua;
+    display:grid; 
+    grid-template-columns:0.2fr 1fr 1fr 1fr 1fr 1fr  1fr 1fr 1fr 0.2fr;
+    grid-template-rows:0.2fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 0.2fr  ;
+    background-color:rgba(1, 0, 0, 0);
+    backdrop-filter: blur(10px);
+  box-shadow: 0 0 10px rgb(0, 255, 119), inset 0 0 10px rgba(0, 210, 255, 0.2);
+    border-radius: 30px;
+    border-radius: 30px;
+
+    
+}
+
+.img2{
+    width:100px;
+    grid-area:4/3/7/5;
+    border-radius: 10px;
+    background-color: white;
+    border-radius: 10px;
+
+}
+.text2{
+    font-weight:900;
+    grid-area: 3 / 5 / 5 / 9;
+    margin-top:10px;
+    font-size:25px;
+}
+
+.par2{
+    font-size: 14px;
+    grid-area:5/5/8/8;
+    
+
+
+}
+
+
+.but2{
+    border-radius:10px;
+    font-size:14px;
+    grid-area:8/5/12/8;
+    height:40px;
+    
+}
+
+.block3{
+
+    grid-area:5/3/7/4;
+    color:aqua;
+    display:grid; 
+    grid-template-columns:0.2fr 1fr 1fr 1fr 1fr 1fr  1fr 1fr 1fr 0.2fr;
+    grid-template-rows:0.2fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 0.2fr  ;
+    background-color:rgba(1, 0, 0, 0);
+    backdrop-filter: blur(10px);
+    box-shadow: 0 0 10px rgb(0, 255, 119), inset 0 0 10px rgba(0, 210, 255, 0.2);
+    border-radius: 30px;
+
+    border-radius: 30px;
+
+    
+}
+
+.img3{
+    width:100px;
+    grid-area:4/3/7/5;
+    border-radius: 10px;
+
+}
+.text3{
+    font-weight:900;
+    grid-area: 3 / 5 / 5 / 10;
+    margin-top:10px;
+    font-size:25px;
+}
+
+.par3{
+    font-size: 14px;
+    grid-area:5/5/8/8;
+    
+
+
+}
+
+
+.but3{
+    border-radius:10px;
+    
+    font-size:14px;
+    grid-area:8/5/12/8;
+    height:40px;
+    
+}
+
+/* ===== POPUP BACKGROUND ===== */
+.popup {
+    display: none;
+    position: fixed;
+    width: 100%;
+    height: 100%;
+    background: rgba(0,0,0,0.7);
+    backdrop-filter: blur(6px);
+    top: 0;
+    left: 0;
+    z-index: 999;
+}
+
+/* ===== POPUP BOX ===== */
+.popup-box {
+    width: 350px;
+    padding: 20px;
+    border-radius: 15px;
+    background: linear-gradient(135deg, #1e1e2f, #2a2a40);
+    color: white;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%) scale(0.9);
+    animation: pop 0.3s ease forwards;
+    box-shadow: 0 0 25px rgba(0,0,0,0.8);
+}
+
+/* Animation */
+@keyframes pop {
+    to {
+        transform: translate(-50%, -50%) scale(1);
+    }
+}
+
+/* Close button */
+.close {
+    float: right;
+    font-size: 22px;
+    cursor: pointer;
+    color: red;
+}
+
+/* Inputs */
+input, textarea {
+    width: 100%;
+    padding: 10px;
+    margin-top: 10px;
+    border-radius: 8px;
+    border: none;
+}
+
+/* Button */
+button {
+    width: 100%;
+    margin-top: 10px;
+    padding: 10px;
+    border-radius: 8px;
+    border: none;
+    background: #f4f8f9;
+    color: black;
+    font-weight: bold;
+}
+
+/* Result */
+.result {
+    margin-top: 10px;
+    padding: 10px;
+    border-radius: 8px;
+    background: rgba(255,255,255,0.1);
+}
+
+/* --- NEW CYBER UI STYLES --- */
+
+.settings-btn {
+    position: fixed;
+    bottom: 20px;
+    right: 20px;
+    background: linear-gradient(135deg, #00d2ff 0%, #3a7bd5 100%);
+    color: white;
+    border: none;
+    border-radius: 50%;
+    width: 60px;
+    height: 60px;
+    font-size: 30px;
+    cursor: pointer;
+    box-shadow: 0 0 15px rgba(0, 210, 255, 0.5);
+    z-index: 1000;
+    transition: transform 0.3s;
+}
+.settings-btn:hover {
+    transform: scale(1.1);
+}
+
+/* Override existing popup to be truly floating */
+.popup.cyber-active {
+    display: none;
+    position: fixed;
+    top: 0; left: 0; width: 100%; height: 100%;
+    background: transparent;
+    backdrop-filter: none;
+    pointer-events: none;
+    z-index: 1000;
+}
+
+.popup-box.cyber-box {
+    position: absolute;
+    pointer-events: auto;
+    transform: none;
+    width: 400px;
+    background: rgb(46, 45, 45);
+    border: 1px solid #e5eaec;
+    box-shadow: 0 0 10px rgba(0, 210, 255, 0.4), inset 0 0 10px rgba(0, 210, 255, 0.2);
+    backdrop-filter: blur(10px);
+    border-radius: 12px;
+    cursor: grab;
+    transition: none; 
+    animation: cyberFadeIn 0.3s ease-out forwards;
+}
+
+.popup-box.cyber-box:active {
+    cursor: grabbing;
+}
+
+@keyframes cyberFadeIn {
+    from { opacity: 0; transform: translateY(-10px) scale(0.95); }
+    to { opacity: 1; transform: translateY(0) scale(1); }
+}
+
+.popup-box.cyber-box h2 {
+    color: #00d2ff;
+    border-bottom: 1px solid rgba(49, 134, 152, 0.3);
+    padding-bottom: 10px;
+    pointer-events: none; 
+    margin-top: 0;
+    font-size: 1.5rem;
+    text-shadow: 0 0 5px rgba(0, 210, 255, 0.5);
+}
+
+.popup-box.cyber-box .close {
+    color: #ff3366;
+    text-shadow: 0 0 5px rgba(255, 51, 102, 0.5);
+    transition: color 0.2s;
+}
+.popup-box.cyber-box .close:hover {
+    color: #ff6688;
+}
+
+.popup-box.cyber-box input,
+.popup-box.cyber-box textarea {
+    background: rgba(0, 0, 0, 0.5);
+    border: 1px solid rgba(0, 210, 255, 0.3);
+    color: #fff;
+    outline: none;
+    cursor: text;
+}
+.popup-box.cyber-box input:focus,
+.popup-box.cyber-box textarea:focus {
+    border-color: #00d2ff;
+    box-shadow: 0 0 8px rgba(0, 210, 255, 0.3);
+}
+
+.popup-box.cyber-box button {
+    background: linear-gradient(90deg, #00d2ff, #3a7bd5);
+    color: white;
+    border: none;
+    box-shadow: 0 0 10px rgba(0, 210, 255, 0.3);
+    cursor: pointer;
+    transition: filter 0.2s;
+}
+.popup-box.cyber-box button:hover {
+    filter: brightness(1.2);
+}
+
+/* Result Section */
+.cyber-result {
+    margin-top: 15px;
+    font-size: 14px;
+    background: rgba(0,0,0,0.3);
+    padding: 15px;
+    border-radius: 8px;
+    border: 1px solid rgba(255,255,255,0.1);
+    word-break: break-word;
+}
+
+.cyber-result .explanation {
+    margin-bottom: 15px;
+    color: #ddd;
+    line-height: 1.4;
+}
+
+.progress-container {
+    margin-bottom: 15px;
+}
+.progress-label {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 5px;
+    font-weight: bold;
+}
+.progress-bar-bg {
+    height: 8px;
+    background: rgba(255, 255, 255, 0.1);
+    border-radius: 4px;
+    overflow: hidden;
+    position: relative;
+    box-shadow: inset 0 1px 3px rgba(0,0,0,0.5);
+}
+.progress-bar-fill {
+    height: 100%;
+    width: 0%;
+    border-radius: 4px;
+    transition: width 1s ease-in-out;
+}
+.pb-threat {
+    background: linear-gradient(90deg, #ff416c, #ff4b2b);
+    box-shadow: 0 0 8px #ff4b2b;
+}
+.pb-safe {
+    background: linear-gradient(90deg, #11998e, #38ef7d);
+    box-shadow: 0 0 8px #38ef7d;
+}
+
+.status-safe { color: #38ef7d; text-shadow: 0 0 5px #38ef7d; }
+.status-medium { color: #f6d365; text-shadow: 0 0 5px #f6d365; }
+.status-danger { color: #ff4b2b; text-shadow: 0 0 5px #ff4b2b; }
+
+.keyword-list {
+    margin-top: 10px;
+    font-size: 13px;
+    color: #ff9a9e;
+    background: rgba(255,0,0,0.1);
+    padding: 8px;
+    border-radius: 5px;
+}
+.timg{
+    width:30px;
+    background-color: white;
+    border-radius: 15px;
+    margin-right:10px
+}

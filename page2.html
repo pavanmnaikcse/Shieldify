@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-sRIl4kxILFvY47J16cr9ZwB07vP4J8+LH7qKQnuqkuIAvNWLzeN8tE5YBujZqJLB" crossorigin="anonymous">
+    <link rel="stylesheet" href="style1.css">
+</head>
+<body>
+   <!-- ===== POPUPS ===== -->
+
+<!-- URL ANALYZER -->
+<div id="urlPopup" class="popup">
+  <div class="popup-box">
+    <span class="close" onclick="closePopup('urlPopup')">&times;</span>
+    <h2>🔗 URL Analyzer</h2>
+    <input id="urlInput" placeholder="Enter URL..." />
+    <button onclick="analyzeURL()">Analyze</button>
+    <div id="urlResult" class="result"></div>
+  </div>
+</div>
+
+<!-- CHAT ANALYZER -->
+<div id="chatPopup" class="popup">
+  <div class="popup-box">
+    <span class="close" onclick="closePopup('chatPopup')">&times;</span>
+    <h2>💬 Chat Analyzer</h2>
+    <textarea id="chatInput" placeholder="Paste chat..."></textarea>
+    <button onclick="analyzeChat()">Analyze</button>
+    <div id="chatResult" class="result"></div>
+  </div>
+</div>
+
+<!-- NEWS ANALYZER -->
+<div id="newsPopup" class="popup">
+  <div class="popup-box">
+    <span class="close" onclick="closePopup('newsPopup')">&times;</span>
+    <h2>📰 Fake News Analyzer</h2>
+    <textarea id="newsInput" placeholder="Paste news..."></textarea>
+    <button onclick="analyzeNews()">Analyze</button>
+    <div id="newsResult" class="result"></div>
+  </div>
+</div>
+
+<!-- SETTINGS -->
+<div id="settingsPopup" class="popup">
+  <div class="popup-box">
+    <span class="close" onclick="closePopup('settingsPopup')">&times;</span>
+    <h2>⚙ Settings</h2>
+    <input id="apiKey" type="password" placeholder="Enter Gemini API Key..." />
+    <button onclick="saveAPI()">Save API Key</button>
+    <button onclick="testAPI()" style="background: linear-gradient(90deg, #ff9900, #ff5500); margin-top: 10px;">Test API</button>
+    <div id="apiTestResult" class="result" style="display: none; text-align: center; margin-top: 10px; font-weight: bold;"></div>
+  </div>
+</div>
+<!-- Settings Button -->
+<button class="settings-btn" onclick="openPopup('settingsPopup')" title="Settings">⚙</button>
+     <div class="container" bis_skin_checked="1"> 
+        <header class="d-flex flex-wrap justify-content-center py-3 mb-4 border-bottom"> 
+            <a href="/" class="d-flex align-items-center mb-3 mb-md-0 me-md-auto link-body-emphasis text-decoration-none"> 
+                <img  class="timg"  src="shield-check-svgrepo-com.svg">
+              <span class="fs-4">Shieldify</span> 
+            </a> 
+            <ul class="nav nav-pills">
+                 <li class="nav-item">
+                    <a href="index.html" class="nav-link active" aria-current="page">Home</a></li> 
+                    <li class="nav-item"><a href="page2.html" class="nav-link">Features</a></li> 
+                    <li class="nav-item"><a href="#" class="nav-link">Pricing</a></li>
+                     <li class="nav-item"><a href="#" class="nav-link">FAQs</a></li>
+                      <li class="nav-item"><a href="#" class="nav-link">About</a></li> 
+                    </ul> 
+                </header> 
+            </div>
+
+
+            <!--tools-->
+            <div class="main">
+                <div class="block1">
+                    
+                    <p class="text1">Chat Analyser</p>
+                    <p class="par1">Identify malicious intent, data leaks, and phishing tactics in messages</p>
+                    <button class="but1" onclick="openPopup('chatPopup')">select & start</button>
+
+                    <img  class="img1" src="CHAT SERCHER.jpg"> </div>
+                    
+
+
+
+
+            <!--block 2-->
+            <div class="block2">
+                <p class="text2">URL Analyser</p>
+                    <p class="par2">Check domains for malware, phishing, and reputation</p>
+                    <button class="but2" onclick="openPopup('urlPopup')">select & start</button>
+
+                    <img  class="img2" src="url-internet-svgrepo-com.svg">
+                
+            </div>
+
+             <!--block 3-->
+            <div class="block3">
+                <p class="text3">Fake News Analyser</p>
+                    <p class="par3">An AI-powered tool that identifies misinformation and evaluates source credibility.</p>
+                    <button class="but3" onclick="openPopup('newsPopup')">select & start</button>
+
+                    <img  class="img3" src="latest-news-newspaper-icon.svg">
+                
+            </div>
+                 
+
+</body>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js" integrity="sha384-FKyoEForCGlyvwx9Hj09JcYn3nv7wiPVlz7YYwJrWVcXK/BmnVDxM+D2scQbITxI" crossorigin="anonymous">
+
+</script>
+<script src="script.js"></script>
+</html>

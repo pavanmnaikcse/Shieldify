@@ -1,0 +1,198 @@
+body{
+    background-image:url(WhatsApp\ Image\ 2026-03-28\ at\ 7.40.30\ AM.jpeg);
+    
+    background-size:cover ;
+    background-position:center ;
+    height:85vh;
+   
+   
+    
+}
+
+/* Navbar background */
+header {
+    background-color: transparent !important;
+    border-bottom: none !important;
+}
+
+/* All navbar text (default white) */
+.navbar,
+.navbar * {
+    color: white !important;
+}
+
+/* Nav links */
+.nav-link {
+    color: white !important;
+    text-decoration: none !important; /* removes underline */
+}
+
+/* Remove underline completely (hover/focus/active) */
+.nav-link:hover,
+.nav-link:focus,
+.nav-link:active {
+    color: #ddd !important;
+    text-decoration: none !important;
+}
+
+/* Remove Bootstrap active/secondary styles */
+.nav-link.link-secondary {
+    color: white !important;
+}
+
+/* Remove any underline from links globally */
+a {
+    text-decoration: none !important;
+}
+
+/* Logo SVG */
+.bi {
+    fill: white;
+}
+
+/* Login button */
+.btn-outline-primary {
+    border: none !important;
+    background: transparent !important;
+    color: white !important;
+}
+
+.btn-outline-primary:hover {
+    color: #ccc !important;
+}
+
+/* Sign-up button */
+.btn-primary {
+    background-color: white !important;
+    color: black !important;
+    border: none !important;
+}
+
+.btn-primary:hover {
+    background-color: #ddd !important;
+}
+
+/* Remove focus outline */
+button:focus,
+.btn:focus {
+    box-shadow: none !important;
+    outline: none !important;
+}
+
+/* Project title (BLACK as you requested) */
+.project-title {
+    color: black !important;
+    font-size: 18px;
+    font-weight: 600;
+    margin-left: 15px;
+}
+
+/* Optional: ensure headings stay white except project title */
+h1, h2, h3, h4, h5, h6,
+p, span {
+    color: white;
+}
+
+/*........................*/
+.title1{
+     text-align: center;
+     font-size: 50px;
+   grid-area: 1/1/3/6;
+     color: white;
+     margin-top:25px;
+     
+     
+     
+}
+.title2{
+    color: aliceblue;
+    grid-area: 2/2/4/5;
+    text-align: center;
+    margin-top: 55px;
+}
+
+    
+    
+
+
+.grid{
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr   1fr ;
+    grid-template-rows: 1fr  1fr 1fr 1fr;
+    height:20opx;
+    margin-top: 90px;
+
+}
+.but{text-align: center;
+    color: rgb(9, 249, 109);
+    border-radius: 5px;
+    border-color: chartreuse;
+    background: transparent;
+    align-items: center;
+    grid-area: 4/3/5/4;
+    height: 60px;
+    width: 190px;
+    margin-left: 170px;
+
+    
+}
+
+
+/* Button */
+.scan-btn {
+  background: linear-gradient(135deg, #1ed760, #00c853);
+  color: rgb(45, 241, 6);
+  border: none;
+  padding: 14px 28px;
+  font-size: 16px;
+  border-radius: 10px;
+  cursor: pointer;
+  display: inline-flex;
+  align-items: center;
+  gap: 10px;
+  position: relative;
+  overflow: hidden;
+  transition: all 0.3s ease;
+  box-shadow: 0 0 20px rgba(0, 255, 150, 0.3);
+  grid-area: 4/3/5/4;
+  margin-top: 15px;
+}
+
+/* Arrow */
+.scan-btn .arrow {
+  font-size: 18px;
+  transition: transform 0.3s ease;
+}
+
+/* Hover effect */
+.scan-btn:hover {
+  transform: translateY(-2px) scale(1.02);
+  box-shadow: 0 0 30px rgba(0, 255, 150, 0.6);
+}
+
+/* Arrow animation */
+.scan-btn:hover .arrow {
+  transform: translateX(5px);
+}
+
+/* Glow animation */
+.scan-btn::before {
+  content: "";
+  position: absolute;
+  inset: 0;
+  border-radius: inherit;
+  background: linear-gradient(120deg, transparent, rgba(255,255,255,0.4), transparent);
+  opacity: 0;
+  transition: opacity 0.3s;
+}
+
+.scan-btn:hover::before {
+  opacity: 1;
+}
+.timg{
+    width:30px;
+    background-color: white;
+    border-radius: 15px;
+    margin-right:10px
+}
+
